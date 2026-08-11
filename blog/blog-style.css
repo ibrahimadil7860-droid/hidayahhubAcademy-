@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+:root{
+  --ink: #0F3B3C; --ink-deep: #0A2C2D; --parchment: #FBF4E7; --parchment-dim: #F2E8D5;
+  --gold: #C6952F; --gold-bright: #E0B152; --maroon: #6E2A38; --charcoal: #241F1A;
+  --line: rgba(198,149,47,0.35);
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ background:var(--parchment); color:var(--charcoal); font-family:'Inter',sans-serif; line-height:1.75; }
+h1,h2,h3{ font-family:'Cormorant Garamond',serif; font-weight:600; color:var(--ink-deep); }
+a{ text-decoration:none; color:inherit; }
+.wrap{ max-width:760px; margin:0 auto; padding:0 24px; }
+header{ background:rgba(251,244,231,0.95); border-bottom:1px solid var(--line); padding:18px 0; position:sticky; top:0; }
+.nav{ display:flex; justify-content:space-between; align-items:center; max-width:760px; margin:0 auto; padding:0 24px; }
+.brand{ font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:700; color:var(--ink-deep); display:flex; align-items:center; gap:8px; }
+.back-link{ font-size:.85rem; color:var(--maroon); }
+.hero-tag{ font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; color:var(--maroon); margin:44px 0 14px; }
+h1.title{ font-size:clamp(1.9rem,4vw,2.6rem); line-height:1.2; margin-bottom:20px; }
+.meta{ font-size:.85rem; color:#6b6153; margin-bottom:36px; }
+article p{ margin-bottom:20px; font-size:1.02rem; color:#3a332b; }
+article h2{ font-size:1.4rem; margin:36px 0 14px; }
+article .arabic{ font-family:'Amiri',serif; direction:rtl; font-size:1.3rem; color:var(--ink); margin:20px 0; }
+.cta-box{ background:var(--parchment-dim); border:1px solid var(--line); border-radius:3px; padding:32px 28px; margin:48px 0; text-align:center; }
+.cta-box h3{ font-size:1.3rem; margin-bottom:10px; }
+.cta-box p{ font-size:.92rem; color:#4a4237; margin-bottom:18px; }
+.btn{ display:inline-block; padding:12px 26px; background:var(--ink); color:var(--parchment); border-radius:2px; font-size:.88rem; }
+footer{ background:var(--ink-deep); color:rgba(251,244,231,.6); text-align:center; padding:30px 24px; font-size:.8rem; margin-top:40px; }
+footer a{ color:var(--gold-bright); }
