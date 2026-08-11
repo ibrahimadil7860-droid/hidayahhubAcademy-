@@ -117,7 +117,7 @@
 
   /* courses */
   .courses-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
-  .course-card{ background: var(--parchment); border:1px solid var(--line); border-radius:3px; padding: 34px 28px; position:relative; transition: transform .3s ease, box-shadow .3s ease; }
+  .course-card{ display:block; background: var(--parchment); border:1px solid var(--line); border-radius:3px; padding: 34px 28px; position:relative; transition: transform .3s ease, box-shadow .3s ease; }
   .course-card:hover{ transform: translateY(-6px); box-shadow: 0 18px 34px rgba(15,59,60,0.1); }
   .course-num{ font-family:'Amiri',serif; font-size:.95rem; color: var(--gold); margin-bottom: 18px; letter-spacing:.05em; }
   .course-card h3{ font-size:1.35rem; margin-bottom:12px; }
@@ -175,6 +175,7 @@
     <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#courses">Courses</a>
+      <a href="#blog">Blog</a>
       <a href="#why">Why Us</a>
       <a href="#contact" class="nav-cta">Book Free Trial</a>
     </nav>
@@ -317,6 +318,56 @@
       </div>
     </div>
   </section>
+
+  <section id="blog">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">From the Blog</div>
+        <h2>Guidance for your learning journey</h2>
+        <p>Practical articles on Qur'an, Tajweed, and raising a Qur'an-connected family — new posts added regularly.</p>
+      </div>
+      <div class="courses-grid">
+        <a href="blog/ghar-baithe-quran.html" class="course-card reveal">
+          <div class="course-num arabic">مقالہ</div>
+          <h3>Ghar Baithe Qur'an Kaise Seekhein</h3>
+          <p>Online Qur'an classes shuru karne ka sahi tareeqa — kya expect karein, kaise teacher choose karein, aur pehla mahina kaisa guzarta hai.</p>
+          <span class="tag">Read more →</span>
+        </a>
+        <a href="blog/tajweed-bachon.html" class="course-card reveal">
+          <div class="course-num arabic">مقالہ</div>
+          <h3>Bacchon Ko Tajweed Sikhane Ka Tareeqa</h3>
+          <p>Chhote bacchon ke liye Tajweed asaan aur interesting banane ke practical tips, ghar par practice karwane ke tareeqe ke sath.</p>
+          <span class="tag">Read more →</span>
+        </a>
+        <a href="blog/hifz-umar.html" class="course-card reveal">
+          <div class="course-num arabic">مقالہ</div>
+          <h3>Hifz Shuru Karne Ki Sahi Umar</h3>
+          <p>Hifz-e-Qur'an ka safar kab shuru karna behtar hai, aur is journey mein walidain ka kirdar kitna ahem hota hai.</p>
+          <span class="tag">Read more →</span>
+        </a>
+        <a href="blog/tajweed-usool.html" class="course-card reveal">
+          <div class="course-num arabic">مقالہ</div>
+          <h3>Tajweed Ke 5 Bunyadi Usool</h3>
+          <p>Makharij, ghunnah, madd, qalqalah aur waqf — har naye talib-e-ilm ke liye asaan zubaan mein bunyadi Tajweed ka taaruf.</p>
+          <span class="tag">Read more →</span>
+        </a>
+        <a href="blog/online-vs-onsite.html" class="course-card reveal">
+          <div class="course-num arabic">مقالہ</div>
+          <h3>Online vs. Onsite Qur'an Classes</h3>
+          <p>Dono tareeqon ka muwazna — kis surat mein online classes zyada faydemand hain, aur kya dhyan mein rakhna chahiye.</p>
+          <span class="tag">Read more →</span>
+        </a>
+        <a href="blog/aalim-course.html" class="course-card reveal">
+          <div class="course-num arabic">مقالہ</div>
+          <h3>Aalim Course: Ek Mukammal Rehnuma</h3>
+          <p>Aalim course mein kya kya shamil hota hai, kitna waqt lagta hai, aur is safar ke liye khud ko kaise tayyar karein.</p>
+          <span class="tag">Read more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="ln"></span><span class="diamond"></span><span class="ln"></span></div>
 
   <section class="why" id="why">
     <div class="wrap">
