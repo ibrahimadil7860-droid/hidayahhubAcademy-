@@ -1,0 +1,175 @@
+/* Hidayah Hub Academy — shared styles for Privacy Policy, Contact, Tajweed & Hifz pages */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap');
+
+:root{
+  --bg: #FAF6EC;
+  --surface: #FFFFFF;
+  --ink: #211F17;
+  --ink-soft: #55503F;
+  --primary: #1F4D3A;
+  --primary-dark: #123125;
+  --gold: #A9782F;
+  --gold-soft: #EFE3C4;
+  --border: #E4DCC4;
+  --max: 760px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Source Sans 3', system-ui, sans-serif;
+  font-size:17px;
+  line-height:1.7;
+}
+
+a{color:var(--primary); text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:focus-visible, button:focus-visible{outline:2px solid var(--gold); outline-offset:2px;}
+
+img{max-width:100%; display:block;}
+
+/* ---- Header ---- */
+header.site-header{
+  border-bottom:1px solid var(--border);
+  background:var(--surface);
+  position:sticky; top:0; z-index:20;
+}
+.header-inner{
+  max-width:1080px; margin:0 auto; padding:16px 24px;
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+  flex-wrap:wrap;
+}
+.brand{
+  font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem;
+  color:var(--primary-dark); letter-spacing:.01em;
+}
+nav.main-nav{display:flex; gap:22px; flex-wrap:wrap;}
+nav.main-nav a{
+  color:var(--ink-soft); font-size:.95rem; font-weight:600;
+}
+nav.main-nav a:hover{color:var(--primary); text-decoration:none;}
+nav.main-nav a.cta{
+  background:var(--primary); color:#fff; padding:8px 16px; border-radius:4px;
+}
+nav.main-nav a.cta:hover{background:var(--primary-dark);}
+
+/* ---- Page hero ---- */
+.page-hero{
+  max-width:var(--max); margin:0 auto; padding:56px 24px 24px;
+}
+.eyebrow{
+  color:var(--gold); font-weight:600; font-size:.85rem;
+}
+.page-hero h1{
+  font-family:'Fraunces', serif; font-weight:600;
+  font-size:clamp(2rem, 4vw, 2.65rem);
+  line-height:1.15; color:var(--primary-dark); margin:.4em 0 .3em;
+}
+.page-hero .lede{
+  color:var(--ink-soft); font-size:1.1rem; max-width:60ch;
+}
+.updated{
+  color:var(--ink-soft); font-size:.9rem; margin-top:18px;
+}
+
+/* ---- Content ---- */
+main.content{
+  max-width:var(--max); margin:0 auto; padding:8px 24px 72px;
+}
+main.content h2{
+  font-family:'Fraunces', serif; font-weight:600;
+  font-size:1.5rem; color:var(--primary-dark);
+  margin:2.4em 0 .5em; padding-top:.2em;
+  border-top:1px solid var(--border); padding-top:1.4em;
+}
+main.content h2:first-of-type{border-top:none; padding-top:0; margin-top:1em;}
+main.content h3{
+  font-family:'Fraunces', serif; font-weight:600;
+  font-size:1.15rem; color:var(--ink); margin:1.6em 0 .4em;
+}
+main.content p{margin:0 0 1em; max-width:70ch;}
+main.content ul, main.content ol{margin:0 0 1.2em; padding-left:1.3em;}
+main.content li{margin:0 0 .5em; max-width:66ch;}
+main.content strong{color:var(--primary-dark);}
+
+.arabic{
+  font-family:'Amiri', serif; direction:rtl; font-size:1.4rem;
+  color:var(--primary-dark); line-height:2; margin:.3em 0;
+}
+
+/* Rule / hadith cards */
+.rule-card, .hadith-card{
+  background:var(--surface); border:1px solid var(--border); border-radius:6px;
+  padding:22px 24px; margin:0 0 18px;
+}
+.rule-card h3{margin-top:0;}
+.rule-tag{
+  display:inline-block; font-size:.78rem; font-weight:700; letter-spacing:.02em;
+  color:var(--primary); background:var(--gold-soft); padding:3px 10px; border-radius:3px;
+  margin-bottom:10px;
+}
+.hadith-card .source{
+  color:var(--gold); font-weight:600; font-size:.9rem; margin-top:10px;
+}
+.hadith-card .grade{
+  color:var(--ink-soft); font-size:.85rem;
+}
+
+blockquote{
+  border-left:3px solid var(--gold); margin:1.4em 0; padding:.2em 0 .2em 20px;
+  color:var(--ink-soft); font-style:italic;
+}
+
+/* ---- Contact specifics ---- */
+.contact-grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:8px;
+}
+@media (max-width:680px){ .contact-grid{grid-template-columns:1fr;} }
+
+.contact-card{
+  background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:28px;
+}
+.contact-card h3{font-family:'Fraunces', serif; margin-top:0; color:var(--primary-dark);}
+.channel-btn{
+  display:inline-block; margin-top:10px; padding:11px 20px; border-radius:5px;
+  background:var(--primary); color:#fff; font-weight:600;
+}
+.channel-btn:hover{background:var(--primary-dark); text-decoration:none;}
+.channel-btn.secondary{background:transparent; color:var(--primary); border:1px solid var(--primary);}
+.channel-btn.secondary:hover{background:var(--gold-soft);}
+
+form.contact-form label{
+  display:block; font-weight:600; margin:14px 0 6px; font-size:.92rem; color:var(--ink);
+}
+form.contact-form input, form.contact-form select, form.contact-form textarea{
+  width:100%; padding:10px 12px; border:1px solid var(--border); border-radius:5px;
+  font-family:inherit; font-size:1rem; background:var(--bg); color:var(--ink);
+}
+form.contact-form textarea{min-height:110px; resize:vertical;}
+form.contact-form button{
+  margin-top:18px; background:var(--primary); color:#fff; border:none; padding:12px 26px;
+  border-radius:5px; font-weight:600; font-size:1rem; cursor:pointer;
+}
+form.contact-form button:hover{background:var(--primary-dark);}
+.form-note{font-size:.85rem; color:var(--ink-soft); margin-top:10px;}
+
+/* ---- Footer ---- */
+footer.site-footer{
+  border-top:1px solid var(--border); background:var(--surface);
+  padding:32px 24px; margin-top:40px;
+}
+.footer-inner{
+  max-width:1080px; margin:0 auto; display:flex; justify-content:space-between;
+  flex-wrap:wrap; gap:16px; align-items:center;
+}
+.footer-inner nav{display:flex; gap:18px; flex-wrap:wrap;}
+.footer-inner nav a{color:var(--ink-soft); font-size:.9rem;}
+.footer-note{color:var(--ink-soft); font-size:.85rem; width:100%; margin-top:18px; text-align:center;}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+}
